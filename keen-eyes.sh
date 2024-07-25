@@ -97,16 +97,29 @@ Please provide an analysis of the changes, including:
 
 Key instructions:
 - Provide your analysis in a clear, concise manner suitable for a PR comment.
+- The analysis should be focused on the changes made and its potential impact on the codebase.
 - Be referential and give examples for the comments you make.
 - Format each section as markdown - so that it can be easily rendered in a PR comment and readable for the user. 
 - Special characters like backticks should be escaped.
 
 Your response should be a json in the following format -
 {
-    \"summary\": \"Summary of the changes.\",
-    \"improvements\": \"Potential improvements or issues you see.\",
-    \"security\": \"Any security concerns.\",
-    \"style\": \"Code style and best practices observations.\"
+    \"summary\": {
+        \"feedback\": \"Summary of the changes.\",
+        \"is_important\": true
+    },
+    \"improvements\": {
+        \"feedback\": \"Potential improvements or issues you see.\",
+        \"is_important\": true
+    },
+    \"security\": {
+        \"feedback\": \"Any security concerns.\",
+        \"is_important\": true
+    },
+    \"style\": {
+        \"feedback\": \"Code style and best practices observations.\",
+        \"is_important\": false
+    }
 }"
 
 # Function to call AWS using AWS Bedrock
@@ -158,7 +171,7 @@ call_claude() {
         }')
 
     # Extract the content
-    local content=$(echo "$response" | jq -r '.content[0].text' | sed 's/[\x00-\x1F\x7F]//g')
+    local content=$(echo "$response" | jq -r '.content[0].text')
 
     # Save the content to the file
     echo "$content" > "$outfile"
@@ -212,12 +225,46 @@ else
     analysis=$(call_claude)
 fi
 
-# Function to add a comment to the PR
+# Function to clean and format the JSON
+clean_json() {
+    local input="$1"
+    # Remove leading and trailing whitespace
+    local trimmed=$(echo "$input" | sed -e 's/^[[:space:]]*//' -e 's/[[:space:]]*$//')
+    # Check if the input already starts and ends with curly braces
+    if [[ "$trimmed" == \{*\} ]]; then
+        echo "$trimmed"
+    else
+        # If not, attempt to extract JSON from the content
+        local extracted=$(echo "$trimmed" | sed -n '/^{/,/}$/p')
+        if [[ -n "$extracted" ]]; then
+            echo "$extracted"
+        else
+            # If no valid JSON found, return an error JSON
+            echo '{"error": "No valid JSON found in the input"}'
+        fi
+    fi
+}
+
+# Function to safely get a value from JSON
+safe_get_json_value() {
+    local json="$1"
+    local key="$2"
+    local default="$3"
+    local value=$(echo "$json" | jq -r ".$key // \"$default\"" 2>/dev/null)
+    if [ $? -ne 0 ] || [ "$value" = "null" ]; then
+        echo "$default"
+    else
+        echo "$value"
+    fi
+}
+
+# Update the function to add a comment to the PR
 add_pr_comment() {
     local title="$1"
     local content="$2"
+    local is_important="$3"
 
-    if [ -z "$content" ]; then
+    if [ -z "$content" ] || [ "$is_important" = "false" ]; then
         return
     fi
     gh pr comment "$pr_number" --body "## $title
@@ -225,11 +272,33 @@ add_pr_comment() {
 $content"
 }
 
-# Add comments for each section of the analysis
-add_pr_comment "Summary" "$(echo "$analysis" | jq -r '.summary')"
-add_pr_comment "Potential Improvements" "$(echo "$analysis" | jq -r '.improvements')"
-add_pr_comment "Security Concerns" "$(echo "$analysis" | jq -r '.security')"
-add_pr_comment "Code Style and Best Practices" "$(echo "$analysis" | jq -r '.style')"
+# Parse the analysis and add comments for each important section
+parse_and_comment() {
+    local analysis="$1"
+    local cleaned_json=$(clean_json "$analysis")
+
+    # Check if the cleaned JSON indicates an error
+    if [[ $(echo "$cleaned_json" | jq -r '.error // empty') ]]; then
+        echo "Error: Failed to parse AI analysis output. Adding error comment to PR."
+        gh pr comment "$pr_number" --body "Error: The AI analysis output could not be parsed correctly. Please check the raw output for details."
+        return
+    fi
+
+    local sections=("summary" "improvements" "security" "style")
+    local titles=("Summary" "Potential Improvements" "Security Concerns" "Code Style and Best Practices")
+
+    for i in "${!sections[@]}"; do
+        local section="${sections[$i]}"
+        local title="${titles[$i]}"
+        local feedback=$(safe_get_json_value "$cleaned_json" "$section.feedback" "")
+        local is_important=$(safe_get_json_value "$cleaned_json" "$section.is_important" "false")
+        add_pr_comment "$title" "$feedback" "$is_important"
+    done
+}
+
+# Call the parsing and commenting function
+parse_and_comment "$analysis"
+
 echo "Analysis added as comments to PR #$pr_number"
 
 # Clean up
