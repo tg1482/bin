@@ -20,14 +20,14 @@ read -r -d '' CONFIG << EOM
             "error": "Please check the URL for any typing errors."
         },
         {
-            "name": "Archive",
-            "url": "https://web.archive.org/web/",
-            "error": "Wayback Machine doesn't have that page archived"
-        },
-        {
             "name": "Ghostarchive",
             "url": "https://ghostarchive.org/search?term=",
             "error": "No archives for that site."
+        },
+        {
+            "name": "Archive",
+            "url": "https://web.archive.org/web/",
+            "error": "Wayback Machine doesn't have that page archived"
         }
     ]
 }
