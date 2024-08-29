@@ -1,10 +1,29 @@
 #!/bin/bash
 
+add_line_numbers=false
+
+# Check for -l option
+while getopts "l" opt; do
+  case $opt in
+    l)
+      add_line_numbers=true
+      ;;
+    \?)
+      echo "Invalid option: -$OPTARG" >&2
+      exit 1
+      ;;
+  esac
+done
+
 # Combine all files in the current directory
 for file in *; do
     if [ -f "$file" ]; then
         echo "// $file" >> combined_output.txt
-        cat "$file" >> combined_output.txt
+        if $add_line_numbers; then
+            nl -ba "$file" >> combined_output.txt
+        else
+            cat "$file" >> combined_output.txt
+        fi
         echo -e "\n" >> combined_output.txt
     fi
 done
