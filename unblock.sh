@@ -74,6 +74,7 @@ add_www() {
 original_url="$1"
 original_url=$(add_www "$original_url")
 echo "Using URL: $original_url"
+echo
 
 # Parse JSON and loop through services
 echo "$CONFIG" | jq -c '.services[]' | while read -r service; do
@@ -85,7 +86,7 @@ echo "$CONFIG" | jq -c '.services[]' | while read -r service; do
     echo "Checking $name..."
     if check_url "$cache_url" "$name" "$error"; then
         echo "$name version available: $cache_url"
-        exit 0
+        echo
     else
         echo "$name version not available or blocked."
         echo
