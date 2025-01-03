@@ -1,5 +1,7 @@
 #!/bin/bash
 
+echo "$(date): Starting backup." >> ~/dev/logs/cronlogs.txt
+
 # Navigate to the repository directory
 cd ~/Library/Mobile\ Documents/iCloud~md~obsidian/Documents/Obsidian\ Notes || exit
 
@@ -13,17 +15,7 @@ if git diff-index --quiet HEAD --; then
 else
     git commit -m "Automatic backup $(date)"
     echo "$(date): Changes committed." >> ~/dev/logs/cronlogs.txt
+    git push origin HEAD >> ~/dev/logs/cronlogs.txt
 fi
 
-# Compare local branch with the remote
-LOCAL=$(git rev-parse HEAD)
-REMOTE=$(git rev-parse @{u})
-
-if [ "$LOCAL" != "$REMOTE" ]; then
-    # Push local changes to remote
-    git push origin HEAD
-    echo "$(date): Changes pushed to remote." >> ~/dev/logs/cronlogs.txt
-else
-    echo "$(date): No changes to push." >> ~/dev/logs/cronlogs.txt
-fi
-
+echo "$(date): Backup completed." >> ~/dev/logs/cronlogs.txt
