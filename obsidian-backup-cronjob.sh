@@ -1,21 +1,36 @@
 #!/bin/bash
 
-echo "$(date): Starting backup." >> ~/dev/logs/cronlogs.txt
+export HOME=/Users/tanmaygupta  # Replace with your actual username
+LOG_FILE=$HOME/dev/logs/cronlogs.txt
+export GIT_SSH_COMMAND="ssh -i $HOME/.ssh/id_ed25519"  # Specify SSH key explicitly
 
-# Navigate to the repository directory
-cd ~/Library/Mobile\ Documents/iCloud~md~obsidian/Documents/Obsidian\ Notes || exit
+OBSIDIAN_PATH="$HOME/Library/Mobile Documents/iCloud~md~obsidian/Documents/Obsidian Notes"
+
+# Add extensive debugging
+echo "$(date): Starting backup." >> "$LOG_FILE"
+
+cd "$OBSIDIAN_PATH" || {
+    echo "$(date): Failed to change directory" >> "$LOG_FILE"
+    exit 1
+}
 
 # Ensure the script runs with the repository
-git fetch origin
+git fetch origin 2>> "$LOG_FILE"
 
 # Add all changes and commit them if there are any
 git add .
 if git diff-index --quiet HEAD --; then
-    echo "$(date): No changes to commit." >> ~/dev/logs/cronlogs.txt
+    echo "$(date): No changes to commit." >> "$LOG_FILE"
 else
-    git commit -m "Automatic backup $(date)"
-    echo "$(date): Changes committed." >> ~/dev/logs/cronlogs.txt
-    git push origin HEAD >> ~/dev/logs/cronlogs.txt
+    git commit -m "Automatic backup $(date)" 2>> "$LOG_FILE"
+    echo "$(date): Changes committed." >> "$LOG_FILE"
+    
+    # Push with error logging
+    if git push origin HEAD 2>> "$LOG_FILE"; then
+        echo "$(date): Successfully pushed changes." >> "$LOG_FILE"
+    else
+        echo "$(date): Failed to push changes." >> "$LOG_FILE"
+    fi
 fi
 
-echo "$(date): Backup completed." >> ~/dev/logs/cronlogs.txt
+echo "$(date): Backup completed." >> "$LOG_FILE"
