@@ -4,7 +4,7 @@ export HOME=/Users/tanmaygupta  # Replace with your actual username
 LOG_FILE=$HOME/dev/logs/cronlogs.txt
 export GIT_SSH_COMMAND="ssh -i $HOME/.ssh/id_ed25519"  # Specify SSH key explicitly
 
-OBSIDIAN_PATH="$HOME/Library/Mobile Documents/iCloud~md~obsidian/Documents/Obsidian Notes"
+OBSIDIAN_PATH="$HOME/dev/obsidian-notes"
 
 # Add extensive debugging
 echo "$(date): Starting backup." >> "$LOG_FILE"
@@ -14,8 +14,13 @@ cd "$OBSIDIAN_PATH" || {
     exit 1
 }
 
-# Ensure the script runs with the repository
-git fetch origin 2>> "$LOG_FILE"
+# Pull changes from remote repository
+if git pull origin 2>> "$LOG_FILE"; then
+    echo "$(date): Successfully pulled changes from remote." >> "$LOG_FILE"
+else
+    echo "$(date): Failed to pull changes from remote." >> "$LOG_FILE"
+fi
+
 
 # Add all changes and commit them if there are any
 git add .
