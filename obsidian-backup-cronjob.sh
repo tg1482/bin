@@ -15,12 +15,27 @@ cd "$OBSIDIAN_PATH" || {
 }
 
 # Pull changes from remote repository
-if git pull origin 2>> "$LOG_FILE"; then
+if git pull origin 2> /tmp/git_pull_error.txt; then
     echo "$(date): Successfully pulled changes from remote." >> "$LOG_FILE"
 else
-    echo "$(date): Failed to pull changes from remote." >> "$LOG_FILE"
+    # Check if the error contains merge conflict indicators
+    if grep -q "CONFLICT\|Automatic merge failed" /tmp/git_pull_error.txt; then
+        error_msg=$(cat /tmp/git_pull_error.txt)
+        echo "$(date): MERGE CONFLICT DETECTED: $error_msg" >> "$LOG_FILE"
+        
+        # Send notification email
+        echo "Merge conflict detected in your Obsidian backup at $(date)" | mail -s "Obsidian Backup Conflict Alert" tg1482@nyu.edu
+        
+        # If on macOS, you can also send a system notification:
+        osascript -e 'display notification "Merge conflicts detected in Obsidian backup" with title "Git Backup Alert"'
+    else
+        echo "$(date): Failed to pull changes from remote." >> "$LOG_FILE"
+    fi
+    
+    # Append the actual error to the log
+    cat /tmp/git_pull_error.txt >> "$LOG_FILE"
+    rm /tmp/git_pull_error.txt
 fi
-
 
 # Add all changes and commit them if there are any
 git add .
