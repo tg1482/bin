@@ -1,0 +1,32 @@
+#!/bin/bash
+
+# Get the current directory and create a session name from it
+SESSION_NAME=$(basename "$PWD" | tr '.' '_')
+
+# Check if session already exists
+tmux has-session -t "$SESSION_NAME" 2>/dev/null
+
+if [ $? != 0 ]; then
+    # Create new session in detached mode
+    tmux new-session -d -s "$SESSION_NAME" -c "$PWD"
+
+    # Split window vertically (left and right)
+    tmux split-window -h -t "$SESSION_NAME" -c "$PWD"
+
+    # Split the right pane horizontally (top and bottom)
+    tmux split-window -v -t "$SESSION_NAME:0.1" -c "$PWD"
+
+    # Start nvim in the left pane (pane 0)
+    tmux send-keys -t "$SESSION_NAME:0.0" "nvim" C-m
+
+    # Start claude code in the top right pane (pane 1)
+    tmux send-keys -t "$SESSION_NAME:0.1" "source ~/bin/fp_claude --continue" C-m
+
+    # Bottom right pane (pane 2) stays in terminal - do nothing
+
+    # Select the left pane (nvim) as the active pane
+    tmux select-pane -t "$SESSION_NAME:0.0"
+fi
+
+# Attach to the session
+tmux attach-session -t "$SESSION_NAME"
