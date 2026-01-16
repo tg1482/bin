@@ -20,7 +20,7 @@ if [ $? != 0 ]; then
     tmux send-keys -t "$SESSION_NAME:0.0" "nvim" C-m
 
     # Start claude code in the top right pane (pane 1)
-    tmux send-keys -t "$SESSION_NAME:0.1" "source ~/bin/fp_claude --continue" C-m
+    tmux send-keys -t "$SESSION_NAME:0.1" "opencode --continue" C-m
 
     # Bottom right pane (pane 2) stays in terminal - do nothing
 
