@@ -17,3 +17,28 @@ export NVM_DIR="$HOME/.nvm"
 
 # Adding starship
 eval "$(starship init zsh)"
+
+# Part of removing omzsh was making terminal simple.
+# Adding my own history and auto complete commands now.
+# History
+export HISTSIZE=1000000
+export SAVEHIST=1000000
+setopt EXTENDED_HISTORY
+setopt HIST_IGNORE_DUPS
+setopt HIST_IGNORE_ALL_DUPS
+setopt HIST_REDUCE_BLANKS
+setopt HIST_VERIFY
+setopt SHARE_HISTORY
+setopt INC_APPEND_HISTORY
+
+# Navigation
+setopt autocd
+
+# Completion
+autoload -Uz compinit
+compinit
+
+# Zsh autosuggestions (ghost text, accept with right arrow)
+source /opt/homebrew/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+bindkey '^[[C' autosuggest-accept
+
