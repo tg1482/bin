@@ -1,4 +1,4 @@
-format = "$directory$character"
+format = "$directory$git_branch$git_status$character"
 right_format = "$time$cmd_duration"
 
 [time]
