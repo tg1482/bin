@@ -10,7 +10,7 @@ font-size = 13
 # THEME & COLORS
 # =============================================================================
 # Built-in themes: "GruvboxDark", "Dracula", "Nord", "Solarized Dark", etc.
-# theme = "GruvboxDark"
+theme = GitHub Dark Default
 
 # Custom colors (uncomment to override theme)
 # background = #1d2021
@@ -72,8 +72,8 @@ mouse-hide-while-typing = true
 # =============================================================================
 # KEYBINDINGS
 # =============================================================================
-# Control + F to toggle fullscreen
-keybind = ctrl+f=toggle_fullscreen
+# Control + F to toggle maximize window
+keybind = ctrl+f=toggle_maximize
 
 # =============================================================================
 # PERFORMANCE
