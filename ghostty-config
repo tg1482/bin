@@ -1,0 +1,82 @@
+# Ghostty Terminal Configuration
+
+# =============================================================================
+# FONT CONFIGURATION
+# =============================================================================
+# font-family = "JetBrains Mono"
+font-size = 13
+
+# =============================================================================
+# THEME & COLORS
+# =============================================================================
+# Built-in themes: "GruvboxDark", "Dracula", "Nord", "Solarized Dark", etc.
+# theme = "GruvboxDark"
+
+# Custom colors (uncomment to override theme)
+# background = #1d2021
+# foreground = #ebdbb2
+# cursor-color = #fbf1c7
+
+# Transparency (0.0 - 1.0)
+# background-opacity = 0.95
+
+# Cursor settings
+cursor-style = block
+# cursor-style-blink = true
+
+# =============================================================================
+# WINDOW BEHAVIOR
+# =============================================================================
+# Padding around terminal content
+window-padding-x = 4
+window-padding-y = 4
+
+# Window size (in columns x rows)
+# window-width = 120
+# window-height = 40
+
+# New windows/tabs inherit the current working directory
+window-inherit-working-directory = true
+
+# Window decorations: true (native), false (none), or "client-side"
+# window-decoration = true
+
+# =============================================================================
+# SHELL INTEGRATION
+# =============================================================================
+# Automatically detect and enable shell integration
+shell-integration = detect
+
+# Features enabled by shell integration:
+# - Working directory tracking for new tabs
+# - Jump to previous prompt with keybinds
+# - Close terminal without confirmation when clean
+
+# =============================================================================
+# SCROLLBACK & SELECTION
+# =============================================================================
+# Scrollback limit in bytes (default is 10MB)
+# scrollback-limit = 10000000
+
+# Copy to clipboard on selection
+copy-on-select = true
+
+# =============================================================================
+# MOUSE & INPUT
+# =============================================================================
+mouse-hide-while-typing = true
+
+# Click on links to open them
+# link-url = true
+
+# =============================================================================
+# KEYBINDINGS
+# =============================================================================
+# Control + F to toggle fullscreen
+keybind = ctrl+f=toggle_fullscreen
+
+# =============================================================================
+# PERFORMANCE
+# =============================================================================
+# Enable vsync to prevent tearing (recommended on macOS)
+window-vsync = true

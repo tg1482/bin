@@ -1,0 +1,46 @@
+#!/bin/bash
+
+# Script to send selected text from nvim to Claude Code pane
+# Assumes layout: pane 0 (nvim), pane 1 (Claude Code), pane 2 (terminal)
+
+SESSION_NAME=$(tmux display-message -p '#S')
+TEMP_FILE="/tmp/nvim-to-claude-$$"
+
+# Find the pane running claude or opencode
+CLAUDE_PANE=$(tmux list-panes -s -F "#{session_name}:#{window_index}.#{pane_index} #{pane_current_command}" | \
+    grep -E "(claude|opencode)" | \
+    head -n 1 | \
+    awk '{print $1}')
+
+if [ -z "$CLAUDE_PANE" ]; then
+    tmux display-message "Could not find Claude Code or OpenCode pane"
+    exit 1
+fi
+
+# Send command to nvim to write file path and visual selection to temp file
+tmux send-keys -t "$SESSION_NAME:0.0" Escape
+sleep 0.05
+tmux send-keys -t "$SESSION_NAME:0.0" ":lua local f=io.open('$TEMP_FILE','w'); if f then f:write(vim.fn.expand('%:p')..'\\n---\\n'); local lines=vim.fn.getregion(vim.fn.getpos(\"'<\"),vim.fn.getpos(\"'>\"),{type=vim.fn.visualmode()}); f:write(table.concat(lines,'\\n')); f:close(); end" Enter
+sleep 0.1
+
+# Check if file was created
+if [ -f "$TEMP_FILE" ]; then
+    FILE_PATH=$(head -n 1 "$TEMP_FILE")
+    SELECTED_TEXT=$(tail -n +3 "$TEMP_FILE")
+
+    # Paste to Claude Code pane using tmux paste-buffer (doesn't auto-send)
+    # Add newline before content to separate multiple pastes
+    FORMATTED_TEXT=$'\n'"File: $FILE_PATH"$'\n'"$SELECTED_TEXT"
+
+    # Copy to tmux paste buffer and paste it
+    printf "%s" "$FORMATTED_TEXT" | tmux load-buffer -
+    tmux paste-buffer -t "$CLAUDE_PANE"
+
+    # Clean up
+    rm -f "$TEMP_FILE"
+
+    # Return focus to nvim
+    tmux select-pane -t "$SESSION_NAME:0.0"
+else
+    tmux display-message "Failed to get selection from nvim"
+fi
