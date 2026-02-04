@@ -75,6 +75,9 @@ mouse-hide-while-typing = true
 # Control + F to toggle maximize window
 keybind = ctrl+f=toggle_maximize
 
+# Shift+Enter sends a newline (useful for multi-line input)
+keybind = shift+enter=text:\x0a
+
 # =============================================================================
 # PERFORMANCE
 # =============================================================================
