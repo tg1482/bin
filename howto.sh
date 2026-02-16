@@ -23,7 +23,7 @@ done
 # Parse args
 if [ "$1" == "-q" ]; then
   QUESTION="$2"
-  (cd "$TMPDIR" && claude "$QUESTION")
+  (cd "$TMPDIR" && opencode run "$QUESTION")
 else
   echo "Usage: howto -q \"your question\""
 fi

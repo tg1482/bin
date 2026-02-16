@@ -15,6 +15,13 @@ alias pip=pip3
 export NVM_DIR="$HOME/.nvm"
 [ -s "$(brew --prefix nvm)/nvm.sh" ] && \. "$(brew --prefix nvm)/nvm.sh"
 
+# easy access to nvim directory
+export NVIMHOME="$HOME/.config/nvim"
+alias nvim_dir='cd "$NVIMHOME"'
+
+# open tmux-dev alias
+alias omg='tmux-dev'
+
 # Adding starship
 eval "$(starship init zsh)"
 
@@ -46,3 +53,18 @@ bindkey '^[[C' autosuggest-accept
 bindkey '^[[1;5C' forward-word   # Ctrl+Right
 bindkey '^[[1;5D' backward-word  # Ctrl+Left
 
+# Up/Down arrow: search history by prefix, cursor at end
+autoload -Uz up-line-or-beginning-search down-line-or-beginning-search
+zle -N up-line-or-beginning-search
+zle -N down-line-or-beginning-search
+bindkey '^[[A' up-line-or-beginning-search
+bindkey '^[[B' down-line-or-beginning-search
+
+alias claude="/Users/tanmaygupta/.claude/local/claude"
+
+# bun
+export BUN_INSTALL="$HOME/.bun"
+export PATH="$BUN_INSTALL/bin:$PATH"
+
+# bun completions
+[ -s "/Users/tanmaygupta/.bun/_bun" ] && source "/Users/tanmaygupta/.bun/_bun"

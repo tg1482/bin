@@ -1,0 +1,202 @@
+2026-02-12T08:01:39-06:00 [Claude] {"session_id":"64066c73-86d4-47cd-96da-4a82a60526c9","transcript_path":"/Users/tanmaygupta/.claude/projects/-Users-tanmaygupta/64066c73-86d4-47cd-96da-4a82a60526c9.jsonl","cwd":"/Users/tanmaygupta","hook_event_name":"Notification","message":"Claude needs your permission to use Bash","notification_type":"permission_prompt"}
+2026-02-12T08:01:53-06:00 [TestAgent] {"notification_type":"idle_prompt","message":"Test notification"}
+2026-02-12T08:02:57-06:00 [Claude] {"session_id":"64066c73-86d4-47cd-96da-4a82a60526c9","transcript_path":"/Users/tanmaygupta/.claude/projects/-Users-tanmaygupta/64066c73-86d4-47cd-96da-4a82a60526c9.jsonl","cwd":"/Users/tanmaygupta","hook_event_name":"Notification","message":"Claude Code needs your attention","notification_type":"permission_prompt"}
+2026-02-12T08:06:14-06:00 [Claude] {"session_id":"64066c73-86d4-47cd-96da-4a82a60526c9","transcript_path":"/Users/tanmaygupta/.claude/projects/-Users-tanmaygupta/64066c73-86d4-47cd-96da-4a82a60526c9.jsonl","cwd":"/Users/tanmaygupta","hook_event_name":"Notification","message":"Claude Code needs your attention","notification_type":"permission_prompt"}
+2026-02-12T08:09:49-06:00 [Claude] {"session_id":"64066c73-86d4-47cd-96da-4a82a60526c9","transcript_path":"/Users/tanmaygupta/.claude/projects/-Users-tanmaygupta/64066c73-86d4-47cd-96da-4a82a60526c9.jsonl","cwd":"/Users/tanmaygupta","hook_event_name":"Notification","message":"Claude needs your permission to use Bash","notification_type":"permission_prompt"}
+2026-02-12T08:14:11-06:00 [OpenCode] {"notification_type":"server.instance.disposed"}
+2026-02-12T08:15:21-06:00 [Claude] {"session_id":"2babd7fa-4581-4bed-b507-94ec73c58f7d","transcript_path":"/Users/tanmaygupta/.claude/projects/-Users-tanmaygupta-dev-bin/2babd7fa-4581-4bed-b507-94ec73c58f7d.jsonl","cwd":"/Users/tanmaygupta/dev/bin","hook_event_name":"Notification","message":"Claude needs your permission to use Read","notification_type":"permission_prompt"}
+2026-02-12T14:38:51-06:00 [Claude] {"session_id":"b2301d91-063e-416f-9049-dcf3c7a8613a","transcript_path":"/Users/tanmaygupta/.claude/projects/-Users-tanmaygupta-dev-simile/b2301d91-063e-416f-9049-dcf3c7a8613a.jsonl","cwd":"/Users/tanmaygupta/dev/simile","hook_event_name":"Notification","message":"Claude needs your permission to use Bash","notification_type":"permission_prompt"}
+2026-02-12T14:43:02-06:00 [Claude] {"session_id":"b2301d91-063e-416f-9049-dcf3c7a8613a","transcript_path":"/Users/tanmaygupta/.claude/projects/-Users-tanmaygupta-dev-simile/b2301d91-063e-416f-9049-dcf3c7a8613a.jsonl","cwd":"/Users/tanmaygupta/dev/simile","hook_event_name":"Notification","message":"Claude is waiting for your input","notification_type":"idle_prompt"}
+2026-02-12T14:51:37-06:00 [Claude] {"session_id":"b2301d91-063e-416f-9049-dcf3c7a8613a","transcript_path":"/Users/tanmaygupta/.claude/projects/-Users-tanmaygupta-dev-simile/b2301d91-063e-416f-9049-dcf3c7a8613a.jsonl","cwd":"/Users/tanmaygupta/dev/simile","hook_event_name":"Notification","message":"Claude needs your permission to use Bash","notification_type":"permission_prompt"}
+2026-02-12T14:51:54-06:00 [Claude] {"session_id":"b2301d91-063e-416f-9049-dcf3c7a8613a","transcript_path":"/Users/tanmaygupta/.claude/projects/-Users-tanmaygupta-dev-simile/b2301d91-063e-416f-9049-dcf3c7a8613a.jsonl","cwd":"/Users/tanmaygupta/dev/simile","hook_event_name":"Notification","message":"Claude needs your permission to use Bash","notification_type":"permission_prompt"}
+2026-02-12T14:53:41-06:00 [Claude] {"session_id":"b2301d91-063e-416f-9049-dcf3c7a8613a","transcript_path":"/Users/tanmaygupta/.claude/projects/-Users-tanmaygupta-dev-simile/b2301d91-063e-416f-9049-dcf3c7a8613a.jsonl","cwd":"/Users/tanmaygupta/dev/simile","hook_event_name":"Notification","message":"Claude needs your permission to use Bash","notification_type":"permission_prompt"}
+2026-02-12T14:54:42-06:00 [Claude] {"session_id":"b2301d91-063e-416f-9049-dcf3c7a8613a","transcript_path":"/Users/tanmaygupta/.claude/projects/-Users-tanmaygupta-dev-simile/b2301d91-063e-416f-9049-dcf3c7a8613a.jsonl","cwd":"/Users/tanmaygupta/dev/simile","hook_event_name":"Notification","message":"Claude needs your permission to use Bash","notification_type":"permission_prompt"}
+2026-02-12T15:03:35-06:00 [Claude] {"session_id":"b2301d91-063e-416f-9049-dcf3c7a8613a","transcript_path":"/Users/tanmaygupta/.claude/projects/-Users-tanmaygupta-dev-simile/b2301d91-063e-416f-9049-dcf3c7a8613a.jsonl","cwd":"/Users/tanmaygupta/dev/simile","hook_event_name":"Notification","message":"Claude needs your permission to use Bash","notification_type":"permission_prompt"}
+2026-02-12T15:10:25-06:00 [Claude] {"session_id":"b2301d91-063e-416f-9049-dcf3c7a8613a","transcript_path":"/Users/tanmaygupta/.claude/projects/-Users-tanmaygupta-dev-simile/b2301d91-063e-416f-9049-dcf3c7a8613a.jsonl","cwd":"/Users/tanmaygupta/dev/simile","hook_event_name":"Notification","message":"Claude is waiting for your input","notification_type":"idle_prompt"}
+2026-02-12T16:43:06-06:00 [Claude] {"session_id":"b2301d91-063e-416f-9049-dcf3c7a8613a","transcript_path":"/Users/tanmaygupta/.claude/projects/-Users-tanmaygupta-dev-simile/b2301d91-063e-416f-9049-dcf3c7a8613a.jsonl","cwd":"/Users/tanmaygupta/dev/simile","hook_event_name":"Notification","message":"Claude needs your permission to use Update","notification_type":"permission_prompt"}
+2026-02-13T16:01:00-06:00 [OpenCode] {"notification_type":"server.instance.disposed"}
+2026-02-13T16:01:57-06:00 [OpenCode] {"notification_type":"file.watcher.updated"}
+2026-02-13T16:02:11-06:00 [OpenCode] {"notification_type":"installation.updated"}
+2026-02-13T16:07:12-06:00 [OpenCode] {"notification_type":"file.watcher.updated"}
+2026-02-13T16:07:43-06:00 [Claude] {"session_id":"41e5c61a-446c-4ffe-bd21-288f9261ed27","transcript_path":"/Users/tanmaygupta/.claude/projects/-Users-tanmaygupta-dev-quarkle/41e5c61a-446c-4ffe-bd21-288f9261ed27.jsonl","cwd":"/Users/tanmaygupta/dev/quarkle/frontend","hook_event_name":"Notification","message":"Claude needs your permission to use Bash","notification_type":"permission_prompt"}
+2026-02-13T16:07:52-06:00 [OpenCode] {"notification_type":"file.watcher.updated"}
+2026-02-13T16:12:03-06:00 [OpenCode] {"notification_type":"file.watcher.updated"}
+2026-02-13T16:12:15-06:00 [OpenCode] {"notification_type":"file.watcher.updated"}
+2026-02-13T16:12:15-06:00 [OpenCode] {"notification_type":"file.watcher.updated"}
+2026-02-13T16:12:15-06:00 [OpenCode] {"notification_type":"file.watcher.updated"}
+2026-02-13T16:12:15-06:00 [OpenCode] {"notification_type":"file.watcher.updated"}
+2026-02-13T16:12:15-06:00 [OpenCode] {"notification_type":"vcs.branch.updated"}
+2026-02-13T16:12:15-06:00 [OpenCode] {"notification_type":"file.watcher.updated"}
+2026-02-13T16:12:15-06:00 [OpenCode] {"notification_type":"file.watcher.updated"}
+2026-02-13T16:12:15-06:00 [OpenCode] {"notification_type":"file.watcher.updated"}
+2026-02-13T16:12:15-06:00 [OpenCode] {"notification_type":"file.watcher.updated"}
+2026-02-13T16:12:22-06:00 [OpenCode] {"notification_type":"file.watcher.updated"}
+2026-02-13T19:04:27-06:00 [OpenCode] {"notification_type":"session.created"}
+2026-02-13T19:04:28-06:00 [OpenCode] {"notification_type":"session.updated"}
+2026-02-13T19:04:28-06:00 [OpenCode] {"notification_type":"message.updated"}
+2026-02-13T19:04:28-06:00 [OpenCode] {"notification_type":"message.part.updated"}
+2026-02-13T19:04:28-06:00 [OpenCode] {"notification_type":"session.updated"}
+2026-02-13T19:04:28-06:00 [OpenCode] {"notification_type":"session.status"}
+2026-02-13T19:04:28-06:00 [OpenCode] {"notification_type":"message.updated"}
+2026-02-13T19:04:28-06:00 [OpenCode] {"notification_type":"session.status"}
+2026-02-13T19:04:28-06:00 [OpenCode] {"notification_type":"message.updated"}
+2026-02-13T19:04:28-06:00 [OpenCode] {"notification_type":"session.updated"}
+2026-02-13T19:04:28-06:00 [OpenCode] {"notification_type":"session.diff"}
+2026-02-13T19:04:30-06:00 [OpenCode] {"notification_type":"message.updated"}
+2026-02-13T19:04:30-06:00 [OpenCode] {"notification_type":"session.updated"}
+2026-02-13T19:04:31-06:00 [OpenCode] {"notification_type":"message.part.updated"}
+2026-02-13T19:04:31-06:00 [OpenCode] {"notification_type":"message.part.updated"}
+2026-02-13T19:04:31-06:00 [OpenCode] {"notification_type":"message.part.updated"}
+2026-02-13T19:04:31-06:00 [OpenCode] {"notification_type":"message.part.updated"}
+2026-02-13T19:04:31-06:00 [OpenCode] {"notification_type":"message.part.updated"}
+2026-02-13T19:04:31-06:00 [OpenCode] {"notification_type":"message.part.updated"}
+2026-02-13T19:04:31-06:00 [OpenCode] {"notification_type":"file.watcher.updated"}
+2026-02-13T19:04:31-06:00 [OpenCode] {"notification_type":"message.part.updated"}
+2026-02-13T19:04:31-06:00 [OpenCode] {"notification_type":"file.watcher.updated"}
+2026-02-13T19:04:31-06:00 [OpenCode] {"notification_type":"file.watcher.updated"}
+2026-02-13T19:04:31-06:00 [OpenCode] {"notification_type":"file.watcher.updated"}
+2026-02-13T19:04:32-06:00 [OpenCode] {"notification_type":"file.watcher.updated"}
+2026-02-13T19:04:32-06:00 [OpenCode] {"notification_type":"file.watcher.updated"}
+2026-02-13T19:04:32-06:00 [OpenCode] {"notification_type":"message.part.updated"}
+2026-02-13T19:04:32-06:00 [OpenCode] {"notification_type":"message.part.updated"}
+2026-02-13T19:04:32-06:00 [OpenCode] {"notification_type":"message.part.updated"}
+2026-02-13T19:04:32-06:00 [OpenCode] {"notification_type":"vcs.branch.updated"}
+2026-02-13T19:04:32-06:00 [OpenCode] {"notification_type":"message.part.updated"}
+2026-02-13T19:04:32-06:00 [OpenCode] {"notification_type":"message.updated"}
+2026-02-13T19:04:32-06:00 [OpenCode] {"notification_type":"message.part.updated"}
+2026-02-13T19:04:33-06:00 [OpenCode] {"notification_type":"message.updated"}
+2026-02-13T19:04:33-06:00 [OpenCode] {"notification_type":"session.status"}
+2026-02-13T19:04:33-06:00 [OpenCode] {"notification_type":"message.updated"}
+2026-02-13T19:04:33-06:00 [OpenCode] {"notification_type":"session.status"}
+2026-02-13T19:04:33-06:00 [OpenCode] {"notification_type":"message.updated"}
+2026-02-13T19:04:33-06:00 [OpenCode] {"notification_type":"session.updated"}
+2026-02-13T19:04:33-06:00 [OpenCode] {"notification_type":"session.diff"}
+2026-02-13T19:04:35-06:00 [OpenCode] {"notification_type":"message.part.updated"}
+2026-02-13T19:04:35-06:00 [OpenCode] {"notification_type":"message.part.updated"}
+2026-02-13T19:04:35-06:00 [OpenCode] {"notification_type":"message.part.updated"}
+2026-02-13T19:04:35-06:00 [OpenCode] {"notification_type":"message.part.updated"}
+2026-02-13T19:04:35-06:00 [OpenCode] {"notification_type":"message.part.updated"}
+2026-02-13T19:04:35-06:00 [OpenCode] {"notification_type":"message.part.updated"}
+2026-02-13T19:04:35-06:00 [OpenCode] {"notification_type":"message.part.updated"}
+2026-02-13T19:04:35-06:00 [OpenCode] {"notification_type":"message.updated"}
+2026-02-13T19:04:35-06:00 [OpenCode] {"notification_type":"message.updated"}
+2026-02-13T19:04:35-06:00 [OpenCode] {"notification_type":"session.status"}
+2026-02-13T19:04:35-06:00 [OpenCode] {"notification_type":"session.status"}
+2026-02-13T19:04:35-06:00 [OpenCode] {"notification_type":"idle_prompt"}
+2026-02-13T19:04:35-06:00 [OpenCode] {"notification_type":"session.updated"}
+2026-02-13T19:04:35-06:00 [OpenCode] {"notification_type":"message.updated"}
+2026-02-13T19:04:35-06:00 [OpenCode] {"notification_type":"session.diff"}
+2026-02-15T15:49:58-08:00 [OpenCode] {"notification_type":"installation.updated"}
+2026-02-15T15:50:44-08:00 [OpenCode] {"notification_type":"session.created"}
+2026-02-15T15:50:44-08:00 [OpenCode] {"notification_type":"session.updated"}
+2026-02-15T15:50:44-08:00 [OpenCode] {"notification_type":"message.updated"}
+2026-02-15T15:50:44-08:00 [OpenCode] {"notification_type":"message.part.updated"}
+2026-02-15T15:50:44-08:00 [OpenCode] {"notification_type":"session.updated"}
+2026-02-15T15:50:44-08:00 [OpenCode] {"notification_type":"session.status"}
+2026-02-15T15:50:44-08:00 [OpenCode] {"notification_type":"message.updated"}
+2026-02-15T15:50:44-08:00 [OpenCode] {"notification_type":"message.updated"}
+2026-02-15T15:50:44-08:00 [OpenCode] {"notification_type":"session.status"}
+2026-02-15T15:50:44-08:00 [OpenCode] {"notification_type":"session.updated"}
+2026-02-15T15:50:44-08:00 [OpenCode] {"notification_type":"session.diff"}
+2026-02-15T15:50:45-08:00 [OpenCode] {"notification_type":"session.updated"}
+2026-02-15T15:50:46-08:00 [OpenCode] {"notification_type":"message.updated"}
+2026-02-15T15:50:47-08:00 [OpenCode] {"notification_type":"message.part.updated"}
+2026-02-15T15:50:47-08:00 [OpenCode] {"notification_type":"message.part.updated"}
+2026-02-15T15:50:47-08:00 [OpenCode] {"notification_type":"message.part.updated"}
+2026-02-15T15:50:48-08:00 [OpenCode] {"notification_type":"message.part.updated"}
+2026-02-15T15:50:48-08:00 [OpenCode] {"notification_type":"message.part.updated"}
+2026-02-15T15:51:02-08:00 [OpenCode] {"notification_type":"message.part.updated"}
+2026-02-15T15:51:02-08:00 [OpenCode] {"notification_type":"message.part.updated"}
+2026-02-15T15:51:02-08:00 [OpenCode] {"notification_type":"message.part.updated"}
+2026-02-15T15:51:50-08:00 [OpenCode] {"notification_type":"message.part.updated"}
+2026-02-15T15:51:50-08:00 [OpenCode] {"notification_type":"message.part.updated"}
+2026-02-15T15:51:50-08:00 [OpenCode] {"notification_type":"message.updated"}
+2026-02-15T15:51:50-08:00 [OpenCode] {"notification_type":"message.updated"}
+2026-02-15T15:51:50-08:00 [OpenCode] {"notification_type":"session.status"}
+2026-02-15T15:51:50-08:00 [OpenCode] {"notification_type":"message.updated"}
+2026-02-15T15:51:50-08:00 [OpenCode] {"notification_type":"session.updated"}
+2026-02-15T15:51:50-08:00 [OpenCode] {"notification_type":"session.diff"}
+2026-02-15T15:51:50-08:00 [OpenCode] {"notification_type":"message.updated"}
+2026-02-15T15:51:50-08:00 [OpenCode] {"notification_type":"session.status"}
+2026-02-15T15:51:52-08:00 [OpenCode] {"notification_type":"message.part.updated"}
+2026-02-15T15:51:52-08:00 [OpenCode] {"notification_type":"message.part.updated"}
+2026-02-15T15:51:52-08:00 [OpenCode] {"notification_type":"message.part.updated"}
+2026-02-15T15:51:52-08:00 [OpenCode] {"notification_type":"message.part.updated"}
+2026-02-15T15:51:53-08:00 [OpenCode] {"notification_type":"message.part.updated"}
+2026-02-15T15:51:53-08:00 [OpenCode] {"notification_type":"message.part.updated"}
+2026-02-15T15:51:53-08:00 [OpenCode] {"notification_type":"message.part.updated"}
+2026-02-15T15:51:53-08:00 [OpenCode] {"notification_type":"message.part.updated"}
+2026-02-15T15:51:53-08:00 [OpenCode] {"notification_type":"message.part.updated"}
+2026-02-15T15:51:53-08:00 [OpenCode] {"notification_type":"message.part.updated"}
+2026-02-15T15:51:53-08:00 [OpenCode] {"notification_type":"message.updated"}
+2026-02-15T15:51:53-08:00 [OpenCode] {"notification_type":"message.updated"}
+2026-02-15T15:51:53-08:00 [OpenCode] {"notification_type":"session.status"}
+2026-02-15T15:51:53-08:00 [OpenCode] {"notification_type":"message.updated"}
+2026-02-15T15:51:53-08:00 [OpenCode] {"notification_type":"session.updated"}
+2026-02-15T15:51:53-08:00 [OpenCode] {"notification_type":"session.diff"}
+2026-02-15T15:51:53-08:00 [OpenCode] {"notification_type":"message.updated"}
+2026-02-15T15:51:53-08:00 [OpenCode] {"notification_type":"session.status"}
+2026-02-15T15:51:55-08:00 [OpenCode] {"notification_type":"message.part.updated"}
+2026-02-15T15:51:56-08:00 [OpenCode] {"notification_type":"message.part.updated"}
+2026-02-15T15:51:56-08:00 [OpenCode] {"notification_type":"message.part.updated"}
+2026-02-15T15:51:56-08:00 [OpenCode] {"notification_type":"message.part.updated"}
+2026-02-15T15:51:56-08:00 [OpenCode] {"notification_type":"message.part.updated"}
+2026-02-15T15:51:57-08:00 [OpenCode] {"notification_type":"message.part.updated"}
+2026-02-15T15:51:57-08:00 [OpenCode] {"notification_type":"message.part.updated"}
+2026-02-15T15:51:57-08:00 [OpenCode] {"notification_type":"message.part.updated"}
+2026-02-15T15:51:57-08:00 [OpenCode] {"notification_type":"message.part.updated"}
+2026-02-15T15:51:57-08:00 [OpenCode] {"notification_type":"message.part.updated"}
+2026-02-15T15:51:57-08:00 [OpenCode] {"notification_type":"message.updated"}
+2026-02-15T15:51:57-08:00 [OpenCode] {"notification_type":"message.updated"}
+2026-02-15T15:51:57-08:00 [OpenCode] {"notification_type":"session.status"}
+2026-02-15T15:51:57-08:00 [OpenCode] {"notification_type":"message.updated"}
+2026-02-15T15:51:57-08:00 [OpenCode] {"notification_type":"session.updated"}
+2026-02-15T15:51:57-08:00 [OpenCode] {"notification_type":"session.diff"}
+2026-02-15T15:51:57-08:00 [OpenCode] {"notification_type":"message.updated"}
+2026-02-15T15:51:57-08:00 [OpenCode] {"notification_type":"session.status"}
+2026-02-15T15:51:59-08:00 [OpenCode] {"notification_type":"message.part.updated"}
+2026-02-15T15:51:59-08:00 [OpenCode] {"notification_type":"message.part.updated"}
+2026-02-15T15:51:59-08:00 [OpenCode] {"notification_type":"message.part.updated"}
+2026-02-15T15:52:00-08:00 [OpenCode] {"notification_type":"message.part.updated"}
+2026-02-15T15:52:00-08:00 [OpenCode] {"notification_type":"message.part.updated"}
+2026-02-15T15:52:01-08:00 [OpenCode] {"notification_type":"message.part.updated"}
+2026-02-15T15:52:01-08:00 [OpenCode] {"notification_type":"message.part.updated"}
+2026-02-15T15:52:01-08:00 [OpenCode] {"notification_type":"message.part.updated"}
+2026-02-15T15:52:02-08:00 [OpenCode] {"notification_type":"message.part.updated"}
+2026-02-15T15:52:08-08:00 [OpenCode] {"notification_type":"session.status"}
+2026-02-15T15:52:08-08:00 [OpenCode] {"notification_type":"idle_prompt"}
+2026-02-15T15:52:08-08:00 [OpenCode] {"notification_type":"session.error"}
+2026-02-15T15:52:08-08:00 [OpenCode] {"notification_type":"session.status"}
+2026-02-15T15:52:08-08:00 [OpenCode] {"notification_type":"idle_prompt"}
+2026-02-15T15:52:08-08:00 [OpenCode] {"notification_type":"message.updated"}
+2026-02-15T15:52:08-08:00 [OpenCode] {"notification_type":"session.status"}
+2026-02-15T15:52:08-08:00 [OpenCode] {"notification_type":"idle_prompt"}
+2026-02-15T15:52:10-08:00 [OpenCode] {"notification_type":"server.instance.disposed"}
+2026-02-15T15:52:48-08:00 [Claude] {"session_id":"917c15f1-3035-49bc-8df3-b282b2143423","transcript_path":"/Users/tanmaygupta/.claude/projects/-Users-tanmaygupta/917c15f1-3035-49bc-8df3-b282b2143423.jsonl","cwd":"/Users/tanmaygupta","hook_event_name":"Notification","message":"Claude needs your permission to use Update","notification_type":"permission_prompt"}
+2026-02-15T15:56:37-08:00 [Claude] {"session_id":"917c15f1-3035-49bc-8df3-b282b2143423","transcript_path":"/Users/tanmaygupta/.claude/projects/-Users-tanmaygupta/917c15f1-3035-49bc-8df3-b282b2143423.jsonl","cwd":"/Users/tanmaygupta","hook_event_name":"Notification","message":"Claude needs your permission to use Write","notification_type":"permission_prompt"}
+2026-02-15T16:02:13-08:00 [Claude] {"session_id":"917c15f1-3035-49bc-8df3-b282b2143423","transcript_path":"/Users/tanmaygupta/.claude/projects/-Users-tanmaygupta/917c15f1-3035-49bc-8df3-b282b2143423.jsonl","cwd":"/Users/tanmaygupta","hook_event_name":"Notification","message":"Claude needs your permission to use Write","notification_type":"permission_prompt"}
+2026-02-15T16:04:15-08:00 [Claude] {"session_id":"917c15f1-3035-49bc-8df3-b282b2143423","transcript_path":"/Users/tanmaygupta/.claude/projects/-Users-tanmaygupta/917c15f1-3035-49bc-8df3-b282b2143423.jsonl","cwd":"/Users/tanmaygupta","hook_event_name":"Notification","message":"Claude is waiting for your input","notification_type":"idle_prompt"}
+2026-02-15T16:07:37-08:00 [Claude] {"session_id":"917c15f1-3035-49bc-8df3-b282b2143423","transcript_path":"/Users/tanmaygupta/.claude/projects/-Users-tanmaygupta/917c15f1-3035-49bc-8df3-b282b2143423.jsonl","cwd":"/Users/tanmaygupta","hook_event_name":"Notification","message":"Claude needs your permission to use Bash","notification_type":"permission_prompt"}
+2026-02-15T16:11:27-08:00 [Claude] {"session_id":"917c15f1-3035-49bc-8df3-b282b2143423","transcript_path":"/Users/tanmaygupta/.claude/projects/-Users-tanmaygupta/917c15f1-3035-49bc-8df3-b282b2143423.jsonl","cwd":"/Users/tanmaygupta","hook_event_name":"Notification","message":"Claude needs your permission to use Bash","notification_type":"permission_prompt"}
+2026-02-15T16:12:42-08:00 [Claude] {"session_id":"917c15f1-3035-49bc-8df3-b282b2143423","transcript_path":"/Users/tanmaygupta/.claude/projects/-Users-tanmaygupta/917c15f1-3035-49bc-8df3-b282b2143423.jsonl","cwd":"/Users/tanmaygupta","hook_event_name":"Notification","message":"Claude needs your permission to use Update","notification_type":"permission_prompt"}
+2026-02-15T16:14:06-08:00 [Claude] {"session_id":"917c15f1-3035-49bc-8df3-b282b2143423","transcript_path":"/Users/tanmaygupta/.claude/projects/-Users-tanmaygupta/917c15f1-3035-49bc-8df3-b282b2143423.jsonl","cwd":"/Users/tanmaygupta","hook_event_name":"Notification","message":"Claude is waiting for your input","notification_type":"idle_prompt"}
+2026-02-15T16:15:01-08:00 [Claude] {"session_id":"917c15f1-3035-49bc-8df3-b282b2143423","transcript_path":"/Users/tanmaygupta/.claude/projects/-Users-tanmaygupta/917c15f1-3035-49bc-8df3-b282b2143423.jsonl","cwd":"/Users/tanmaygupta","hook_event_name":"Notification","message":"Claude needs your permission to use Bash","notification_type":"permission_prompt"}
+2026-02-15T16:18:48-08:00 [Claude] {"session_id":"917c15f1-3035-49bc-8df3-b282b2143423","transcript_path":"/Users/tanmaygupta/.claude/projects/-Users-tanmaygupta/917c15f1-3035-49bc-8df3-b282b2143423.jsonl","cwd":"/Users/tanmaygupta","hook_event_name":"Notification","message":"Claude needs your permission to use Bash","notification_type":"permission_prompt"}
+2026-02-15T16:19:40-08:00 [Claude] {"session_id":"917c15f1-3035-49bc-8df3-b282b2143423","transcript_path":"/Users/tanmaygupta/.claude/projects/-Users-tanmaygupta/917c15f1-3035-49bc-8df3-b282b2143423.jsonl","cwd":"/Users/tanmaygupta","hook_event_name":"Notification","message":"Claude needs your permission to use Bash","notification_type":"permission_prompt"}
+2026-02-15T16:20:48-08:00 [Claude] {"session_id":"917c15f1-3035-49bc-8df3-b282b2143423","transcript_path":"/Users/tanmaygupta/.claude/projects/-Users-tanmaygupta/917c15f1-3035-49bc-8df3-b282b2143423.jsonl","cwd":"/Users/tanmaygupta","hook_event_name":"Notification","message":"Claude needs your permission to use Write","notification_type":"permission_prompt"}
+2026-02-15T16:29:10-08:00 [OpenCode] {"notification_type":"file.watcher.updated"}
+2026-02-15T16:29:10-08:00 [OpenCode] {"notification_type":"file.watcher.updated"}
+2026-02-15T16:29:11-08:00 [OpenCode] {"notification_type":"file.watcher.updated"}
+2026-02-15T16:29:11-08:00 [OpenCode] {"notification_type":"file.watcher.updated"}
+2026-02-15T16:29:27-08:00 [OpenCode] {"notification_type":"file.watcher.updated"}
+2026-02-15T16:29:27-08:00 [OpenCode] {"notification_type":"file.watcher.updated"}
+2026-02-15T16:29:27-08:00 [OpenCode] {"notification_type":"file.watcher.updated"}
+2026-02-15T16:29:39-08:00 [OpenCode] {"notification_type":"server.instance.disposed"}
+2026-02-15T16:42:14-08:00 [Claude] {"session_id":"e03c1d06-e4b6-46c8-af4f-235296a22454","transcript_path":"/Users/tanmaygupta/.claude/projects/-Users-tanmaygupta-dev/e03c1d06-e4b6-46c8-af4f-235296a22454.jsonl","cwd":"/Users/tanmaygupta/dev","hook_event_name":"Notification","message":"Claude is waiting for your input","notification_type":"idle_prompt"}
+2026-02-15T16:44:08-08:00 [Claude] {"session_id":"e03c1d06-e4b6-46c8-af4f-235296a22454","transcript_path":"/Users/tanmaygupta/.claude/projects/-Users-tanmaygupta-dev/e03c1d06-e4b6-46c8-af4f-235296a22454.jsonl","cwd":"/Users/tanmaygupta/dev","hook_event_name":"Notification","message":"Claude is waiting for your input","notification_type":"idle_prompt"}
+2026-02-15T16:46:06-08:00 [Claude] {"session_id":"e03c1d06-e4b6-46c8-af4f-235296a22454","transcript_path":"/Users/tanmaygupta/.claude/projects/-Users-tanmaygupta-dev/e03c1d06-e4b6-46c8-af4f-235296a22454.jsonl","cwd":"/Users/tanmaygupta/dev","hook_event_name":"Notification","message":"Claude is waiting for your input","notification_type":"idle_prompt"}
+2026-02-15T16:49:07-08:00 [Claude] {"session_id":"e03c1d06-e4b6-46c8-af4f-235296a22454","transcript_path":"/Users/tanmaygupta/.claude/projects/-Users-tanmaygupta-dev/e03c1d06-e4b6-46c8-af4f-235296a22454.jsonl","cwd":"/Users/tanmaygupta/dev","hook_event_name":"Notification","message":"Claude is waiting for your input","notification_type":"idle_prompt"}
+2026-02-15T16:54:43-08:00 [Claude] {"session_id":"bd979b14-b320-4bb5-872f-a991f344e898","transcript_path":"/Users/tanmaygupta/.claude/projects/-Users-tanmaygupta/bd979b14-b320-4bb5-872f-a991f344e898.jsonl","cwd":"/Users/tanmaygupta","hook_event_name":"Notification","message":"Claude needs your permission to use Write","notification_type":"permission_prompt"}
+2026-02-15T17:01:02-08:00 [Claude] {"session_id":"2babd7fa-4581-4bed-b507-94ec73c58f7d","transcript_path":"/Users/tanmaygupta/.claude/projects/-Users-tanmaygupta-dev-bin/2babd7fa-4581-4bed-b507-94ec73c58f7d.jsonl","cwd":"/Users/tanmaygupta/dev/bin","hook_event_name":"Notification","message":"Claude needs your permission to use Update","notification_type":"permission_prompt"}
+2026-02-15T17:02:31-08:00 [Claude] {"session_id":"2babd7fa-4581-4bed-b507-94ec73c58f7d","transcript_path":"/Users/tanmaygupta/.claude/projects/-Users-tanmaygupta-dev-bin/2babd7fa-4581-4bed-b507-94ec73c58f7d.jsonl","cwd":"/Users/tanmaygupta/dev/bin","hook_event_name":"Notification","message":"Claude needs your permission to use Update","notification_type":"permission_prompt"}
+2026-02-15T17:06:10-08:00 [Claude] {"session_id":"2babd7fa-4581-4bed-b507-94ec73c58f7d","transcript_path":"/Users/tanmaygupta/.claude/projects/-Users-tanmaygupta-dev-bin/2babd7fa-4581-4bed-b507-94ec73c58f7d.jsonl","cwd":"/Users/tanmaygupta/dev/bin","hook_event_name":"Notification","message":"Claude needs your permission to use Bash","notification_type":"permission_prompt"}

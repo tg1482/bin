@@ -13,8 +13,8 @@ if [ $? != 0 ]; then
     # Split window vertically (left and right)
     tmux split-window -h -t "$SESSION_NAME" -c "$PWD"
 
-    # Split the right pane horizontally (top and bottom)
-    tmux split-window -v -t "$SESSION_NAME:0.1" -c "$PWD"
+    # Split the right pane horizontally (top and bottom) - 3/4 opencode, 1/4 terminal
+    tmux split-window -v -p 25 -t "$SESSION_NAME:0.1" -c "$PWD"
 
     # Start nvim in the left pane (pane 0)
     tmux send-keys -t "$SESSION_NAME:0.0" "nvim" C-m
